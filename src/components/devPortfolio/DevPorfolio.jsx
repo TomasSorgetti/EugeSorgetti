@@ -1,37 +1,43 @@
-import React from 'react'
+import React from "react";
 
-
-
-import DevPorfolio1 from "../../assets/img/devPorfolio1.png"
+import DevPorfolio1 from "../../assets/img/devPorfolio1.png";
 import DevPorfolio2 from "../../assets/img/devPorfolio2.png";
 import DevPorfolio3 from "../../assets/img/devPorfolio3.png";
 
 const DevPorfolio = () => {
   return (
-    <article>
+    <article className="py-20">
       <div>
-        <div>
-          <h4>04 dev portfolio</h4>
+        <h4 className="w-full text-center mb-5 font-medium text-2xl">
+          04 dev portfolio
+        </h4>
+        <div className="px-6">
+          <p>
+            I created this landing page to be modern, vibrant and futuristic. To
+            achieve this, I opted for bold colours and incorporated eye-catching
+            neon effects.
+          </p>
+          <p>
+            The typography Days One, used for headlines, conveys a sense of
+            strength, impact and boldness with its wide letterforms and thick
+            strokes. It’s paired with Bai Jamjuree, a square sans-serif, for a
+            clean and contemporary look, ideal for technology.
+          </p>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo et nemo
-          vero quas sequi soluta perspiciatis. Porro, enim saepe odio fugiat
-          quod dignissimos eaque, nulla repellendus nemo, sunt aliquam quo!
-        </p>
       </div>
       <div>
-        <div>
+        <div className="hidden">
           <img src={DevPorfolio1} alt="dev portfolio image" />
         </div>
         <div>
-          <div>
+          <div className="w-full flex justify-center my-5">
             <img src={DevPorfolio2} alt="dev portfolio image" />
           </div>
           <div>
-            <div>
+            <div className="hidden">
               <img src={DevPorfolio3} alt="dev portfolio image" />
             </div>
-            <div>
+            <div className="hidden">
               <div>
                 <h5>DAYS ONE</h5>
                 <p>Bai Jamjuree Regular</p>
@@ -45,13 +51,18 @@ const DevPorfolio = () => {
             </div>
           </div>
         </div>
-        <div>
-          <button>Check it out</button>
-          <p>or see the design on Behance</p>
+        <div className="w-full flex flex-col items-center gap-4">
+          <button className="bg-black text-white w-11/12 py-3 rounded font-semibold text-base">
+            Check it out
+          </button>
+          <div className="flex gap-1">
+            <p>or see the design on</p>
+            <p className="font-semibold">Behance</p>
+          </div>
         </div>
       </div>
     </article>
   );
-}
+};
 
-export default DevPorfolio
+export default DevPorfolio;

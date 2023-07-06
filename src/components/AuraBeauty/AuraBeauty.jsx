@@ -12,8 +12,8 @@ const AuraBeauty = () => {
   ];
   return (
     <div className="relative">
-      <div className="flex flex-col items-center absolute -top-36 right-1/4">
-        <h4>02 Aura Beauty</h4>
+      <div className="flex flex-col items-center absolute -top-44 left-1/4 gap-4">
+        <h4 className="text-2xl font-medium">02 Aura Beauty</h4>
         <img
           className="hidden"
           src={AuraBeautyImg}

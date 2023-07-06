@@ -15,7 +15,7 @@ const Porfolio = () => {
           <About />
         </article>
         <section className="bg-background1 flex flex-col items-center ">
-          <h3>Portfolio</h3>
+          <h3 className="text-2xl font-medium">Portfolio</h3>
           <article className="mx-auto mb-20">
             <div>
               <p>01</p>

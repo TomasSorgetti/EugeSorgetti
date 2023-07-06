@@ -13,9 +13,9 @@ const Time2Talk = () => {
   return (
     <section>
       <article className="flex flex-col items-center">
-        <h4 className="w-full">01 time2talk</h4>
+        <h4 className="w-full text-2xl font-medium">01 time2talk</h4>
         <img
-          className="w-10/12 my-8"
+          className="w-9/12 my-8"
           src={time2talkimg}
           alt="time2talk image"
         />
@@ -39,7 +39,7 @@ const Time2Talk = () => {
               ))}
             </ul>
           </div>
-          <div className="flex flex-col items-center mb-40">
+          <div className="flex flex-col items-center mb-52">
             <button className="bg-black text-white w-11/12 py-3 rounded font-semibold text-base">
               Contact me
             </button>
