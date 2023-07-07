@@ -8,9 +8,11 @@ module.exports = {
         background2: "#ffffff",
         darkText: "#000000",
         lightText: "#747474",
+        thirdtext: "#b3b3b3",
       },
       fontFamily: {
         epilogue: ["Epilogue"],
+        estrato: ["estratto-variable"],
       },
     },
   },

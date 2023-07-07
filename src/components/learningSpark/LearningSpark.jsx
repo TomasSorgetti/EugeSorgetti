@@ -2,9 +2,9 @@ import React from "react";
 import learningSpark from "../../assets/img/learningSpark.png";
 const LearningSpark = () => {
   return (
-    <section className="mb-40">
+    <section className="mb-40" id="learning">
       <article>
-        <h4 className="px-6 mt-14 mb-4 text-2xl font-medium">
+        <h4 className="px-6 mt-14 mb-4 text-3xl font-medium font-estrato italic">
           03 learningspark
         </h4>
         <div>
@@ -27,11 +27,7 @@ const LearningSpark = () => {
             </p>
           </div>
           <div className="">
-            <img
-              className=""
-              src={learningSpark}
-              alt="learning spark image"
-            />
+            <img className="" src={learningSpark} alt="learning spark image" />
           </div>
         </div>
         <div className="flex flex-col items-center gap-6 my-5 w-full">

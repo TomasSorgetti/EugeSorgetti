@@ -11,13 +11,15 @@ const AuraBeauty = () => {
     "1 QA",
   ];
   return (
-    <div className="relative">
+    <div className="relative" id="aurabeauty">
       <div className="flex flex-col items-center absolute -top-44 left-1/4 gap-4">
-        <h4 className="text-2xl font-medium">02 Aura Beauty</h4>
+        <h4 className="text-3xl font-medium font-estrato italic">
+          02 Aura Beauty
+        </h4>
         <img
           className="hidden"
           src={AuraBeautyImg}
-          alt="auraBeauty: computer image"
+          alt="auraBeauty: computer"
         />
         <img src={AuraBeautyMobile} alt="auraBeauty: cellphone image" />
       </div>

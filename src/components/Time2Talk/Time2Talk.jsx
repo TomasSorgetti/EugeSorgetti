@@ -11,14 +11,12 @@ const Time2Talk = () => {
     "1 QA",
   ];
   return (
-    <section>
+    <section id="time2talk">
       <article className="flex flex-col items-center">
-        <h4 className="w-full text-2xl font-medium">01 time2talk</h4>
-        <img
-          className="w-9/12 my-8"
-          src={time2talkimg}
-          alt="time2talk image"
-        />
+        <h4 className="w-full text-3xl font-medium font-estrato italic pl-5">
+          01 time2talk
+        </h4>
+        <img className="w-9/12 my-8" src={time2talkimg} alt="cellphone" />
         <div>
           <div>
             <div className="flex flex-col gap-4 mb-5 px-5">

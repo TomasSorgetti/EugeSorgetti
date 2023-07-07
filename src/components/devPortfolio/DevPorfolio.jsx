@@ -6,9 +6,9 @@ import DevPorfolio3 from "../../assets/img/devPorfolio3.png";
 
 const DevPorfolio = () => {
   return (
-    <article className="py-20">
+    <article className="py-20" id="devportfolio">
       <div>
-        <h4 className="w-full text-center mb-5 font-medium text-2xl">
+        <h4 className="w-full text-center mb-5 text-3xl font-medium font-estrato italic">
           04 dev portfolio
         </h4>
         <div className="px-6">
