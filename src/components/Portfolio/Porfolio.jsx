@@ -1,11 +1,16 @@
 import React from "react";
 
+//imports components
 import Time2Talk from "../Time2Talk/Time2Talk";
-
+import Design from "../Design/Design";
 import AuraBeauty from "../AuraBeauty/AuraBeauty";
 import LearningSpark from "../learningSpark/LearningSpark";
 import DevPorfolio from "../devPortfolio/DevPorfolio";
 import About from "../About/About"
+import GetInTouch from "../GetInTouch/GetInTouch";
+
+
+//imports images
 import leaves from "../../assets/img/Leaves-Flourish.png"
 const Porfolio = () => {
   return (
@@ -15,25 +20,25 @@ const Porfolio = () => {
           <About />
         </article>
         <section className="bg-background1 flex flex-col items-center ">
-          <h3 className="text-2xl font-medium">Portfolio</h3>
-          <article className="mx-auto mb-20">
-            <div>
+          <h3 className="text-2xl font-medium mb-10">Portfolio</h3>
+          <article className="w-full mb-20 px-6 flex flex-col gap-4">
+            <div className="flex gap-2">
               <p>01</p>
               <p>time2talk</p>
             </div>
-            <div>
+            <div className="flex gap-2 pl-10">
               <p>02</p>
               <p>aura beauty</p>
             </div>
-            <div>
+            <div className="flex gap-2 pl-20">
               <p>03</p>
               <p>learningspark</p>
             </div>
-            <div>
+            <div className="flex gap-2 pl-28">
               <p>04</p>
               <p>dev porfolio</p>
             </div>
-            <div>
+            <div className="flex gap-2 justify-end">
               <p>05</p>
               <div>
                 <p>design challenges</p>
@@ -50,6 +55,10 @@ const Porfolio = () => {
         </section>
         <section className="bg-background1">
           <DevPorfolio />
+        </section>
+        <section className="bg-background2">
+          <Design />
+          <GetInTouch/>
         </section>
       </section>
     </div>
