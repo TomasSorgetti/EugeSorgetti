@@ -60,8 +60,8 @@ const GetInTouch = () => {
           user experiences together. I look forward to hearing from you!
         </p>
       </div>
-      <form className="px-5 flex flex-col gap-4 mt-5">
-        <div className="flex flex-col gap-2">
+      <form className="px-5 flex flex-col gap-10 mt-5">
+        <div className="flex flex-col gap-0 relative">
           <label className="font-medium">Name*</label>
           <input
             className=" border-solid border-thirdtext border-b-2 h-10 focus:outline-none focus:border-black"
@@ -72,10 +72,12 @@ const GetInTouch = () => {
             value={form.name}
           />
           {submited && form.name === "" && (
-            <span className="text-red-600">Please fill in this field</span>
+            <span className="text-red-600 absolute bottom-[-30px]">
+              Please fill in this field
+            </span>
           )}
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2  relative">
           <label className="font-medium">E-mail address*</label>
           <input
             className=" border-solid border-thirdtext border-b-2 h-10 focus:outline-none focus:border-black"
@@ -86,10 +88,12 @@ const GetInTouch = () => {
             value={form.email}
           />
           {submited && form.email === "" && (
-            <span className="text-red-600">Please fill in this field</span>
+            <span className="text-red-600 absolute bottom-[-30px]">
+              Please fill in this field
+            </span>
           )}
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 relative">
           <label className="font-medium">Subject*</label>
           <input
             className=" border-solid border-thirdtext border-b-2 h-10 focus:outline-none focus:border-black"
@@ -100,10 +104,12 @@ const GetInTouch = () => {
             value={form.subject}
           />
           {submited && form.subject === "" && (
-            <span className="text-red-600">Please fill in this field</span>
+            <span className="text-red-600 absolute bottom-[-30px]">
+              Please fill in this field
+            </span>
           )}
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 relative">
           <label className="font-medium">Message*</label>
           <textarea
             className="border-solid border-thirdtext border-b-2 h-32 focus:outline-none focus:border-black"
@@ -116,7 +122,9 @@ const GetInTouch = () => {
           ></textarea>
           <span>{form.message.length}/500</span>
           {submited && form.message === "" && (
-            <span className="text-red-600">Please fill in this field</span>
+            <span className="text-red-600 absolute bottom-[-30px]">
+              Please fill in this field
+            </span>
           )}
         </div>
         <div className="w-full flex flex-col items-center gap-4 my-10">
