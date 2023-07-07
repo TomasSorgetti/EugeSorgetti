@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import leaves from "../../assets/img/Leaves-Flourish.png";
 
 const GetInTouch = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (event) => {
+    const property = event.target.name;
+    const value = event.target.value;
+
+    setForm({ ...form, [property]: value });
+  };
+
+  function handleKeyDown(e) {
+    const textarea = e.target;
+    const maxLength = textarea.maxLength;
+    const currentLength = textarea.value.length;
+    const keyPressed = e.key;
+
+    if (currentLength >= maxLength && keyPressed !== "Backspace") {
+      e.preventDefault();
+    }
+  }
+
+    const handleSubmit = () => {
+
+  };
+
   return (
     <div>
       <div className="w-full flex justify-center my-10">
@@ -21,6 +50,8 @@ const GetInTouch = () => {
           <input
             className=" border-solid border-black border-b-2 h-10"
             placeholder="John Doe"
+            onChange={handleChange}
+            name="name"
             type="text"
           />
         </div>
@@ -29,6 +60,8 @@ const GetInTouch = () => {
           <input
             className=" border-solid border-black border-b-2 h-10"
             placeholder="johndoe@mail.com"
+            onChange={handleChange}
+            name="email"
             type="text"
           />
         </div>
@@ -37,18 +70,29 @@ const GetInTouch = () => {
           <input
             className=" border-solid border-black border-b-2 h-10"
             placeholder="UX/UI Interview"
+            onChange={handleChange}
+            name="subject"
             type="text"
           />
         </div>
         <div className="flex flex-col gap-2">
           <label className="font-medium">Message*</label>
           <textarea
-            className=" border-solid border-black border-b-2 h-32"
+            className="border-solid border-black border-b-2 h-32"
             placeholder="Drop me a message and let's start a conversation!"
+            onChange={handleChange}
+            name="message"
+            maxLength={500}
+            onKeyDown={handleKeyDown}
           ></textarea>
+          <span>{form.message.length}/500</span>
         </div>
         <div className="w-full flex flex-col items-center gap-4 my-10">
-          <button className="bg-black text-white w-full py-3 rounded font-semibold text-base">
+          <button
+            onClick={() => handleSubmit()}
+            type="button"
+            className="bg-black text-white w-full py-3 rounded font-semibold text-base"
+          >
             Send message
           </button>
         </div>
