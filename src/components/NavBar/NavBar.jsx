@@ -1,4 +1,8 @@
 import React from 'react'
+import { BsBehance } from "react-icons/bs";
+import { BiLogoLinkedin } from "react-icons/bi";
+
+
 
 const NavBar = () => {
   return (
@@ -16,8 +20,12 @@ const NavBar = () => {
         </li>
       </ul>
       <div className="flex gap-1">
-        <p>Bë</p>
-        <p>In</p>
+        <a href="#">
+          <BsBehance size={"1.5rem"} />
+        </a>
+        <a href="#">
+          <BiLogoLinkedin size={"1.5rem"} />
+        </a>
       </div>
     </nav>
   );
