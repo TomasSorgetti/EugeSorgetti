@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="gap-3 flex flex-col items-center border- border-2 border-black w-10/12 p-5 pb-10 my-10">
+    <div id='about' className="gap-3 flex flex-col items-center border- border-2 border-black w-10/12 p-5 pb-10 my-10">
       <h2 className="text-3xl font-medium font-estrato italic">About</h2>
       <p>
         I’m an eclectic designer who mostly specialises on web/UI Design. I

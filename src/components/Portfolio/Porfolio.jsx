@@ -19,7 +19,10 @@ const Porfolio = () => {
         <article className="bg-background1 grid place-items-center">
           <About />
         </article>
-        <section className="bg-background1 flex flex-col items-center ">
+        <section
+          id="portfolio"
+          className="bg-background1 flex flex-col items-center "
+        >
           <h3 className="text-3xl font-medium font-estrato italic mb-10">
             Portfolio
           </h3>
