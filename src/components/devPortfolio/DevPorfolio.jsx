@@ -6,7 +6,7 @@ import DevPorfolio3 from "../../assets/img/devPorfolio3.png";
 
 const DevPorfolio = () => {
   return (
-    <article className="py-20" id="devportfolio">
+    <article className="py-16" id="devportfolio">
       <div>
         <h4 className="w-full text-center mb-5 text-3xl font-medium font-estrato italic">
           04 dev portfolio
@@ -27,15 +27,15 @@ const DevPorfolio = () => {
       </div>
       <div>
         <div className="hidden">
-          <img src={DevPorfolio1} alt="dev portfolio image" />
+          <img src={DevPorfolio1} alt="dev portfolio" />
         </div>
-        <div>
+        <div className="sm:my-20">
           <div className="w-full flex justify-center my-5">
-            <img src={DevPorfolio2} alt="dev portfolio image" />
+            <img src={DevPorfolio2} alt="dev portfolio" />
           </div>
           <div>
             <div className="hidden">
-              <img src={DevPorfolio3} alt="dev portfolio image" />
+              <img src={DevPorfolio3} alt="dev portfolio" />
             </div>
             <div className="hidden">
               <div>
@@ -51,13 +51,13 @@ const DevPorfolio = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-col items-center gap-4">
+        <div className="w-full flex flex-col items-center gap-4 sm:mb-6">
           <button className="bg-black text-white w-11/12 py-3 rounded font-semibold text-base">
             Check it out
           </button>
           <div className="flex gap-1">
             <p>or see the design on</p>
-            <p className="font-semibold">Behance</p>
+            <p className="font-semibold underline">Behance</p>
           </div>
         </div>
       </div>

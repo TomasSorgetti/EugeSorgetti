@@ -12,7 +12,7 @@ const AuraBeauty = () => {
   ];
   return (
     <div className="relative" id="aurabeauty">
-      <div className="flex flex-col items-center absolute -top-44 left-[20%] gap-4">
+      <div className="flex flex-col items-center absolute -top-44 left-[20%] sm:left-[34%] gap-4">
         <h4 className="text-3xl font-medium font-estrato italic">
           02 Aura Beauty
         </h4>
@@ -24,18 +24,18 @@ const AuraBeauty = () => {
         <img src={AuraBeautyMobile} alt="auraBeauty: cellphone" />
       </div>
       <div>
-        <p className="pt-72 px-6 mb-5">
+        <p className="pt-72 px-6 mb-6">
           Custom-fit manicures, smart-sizing powered by AI. I participated in
           the creation of the web app and Shopify, worked on components and the
           UI Kit.
         </p>
-        <ul className="px-10 text-lightText list-disc">
+        <ul className="px-10 text-lightText list-disc ">
           {auraBeautyArr?.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
       </div>
-      <div className="flex justify-center my-5 w-full">
+      <div className="flex justify-center my-8 w-full">
         <button className="bg-black text-white w-11/12 py-3 rounded font-semibold text-base">
           Check out aura
         </button>
