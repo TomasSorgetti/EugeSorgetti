@@ -68,7 +68,11 @@ const GetInTouch = () => {
           user experiences together. I look forward to hearing from you!
         </p>
       </div>
-      <form className="px-5 flex flex-col gap-10 mt-5">
+      <form
+        action="https://formspree.io/f/mnqloqlo"
+        method="POST"
+        className="px-5 flex flex-col gap-10 mt-5"
+      >
         <div className="flex flex-col gap-0 relative">
           <label className="font-medium">Name*</label>
           <input
@@ -86,13 +90,15 @@ const GetInTouch = () => {
           )}
         </div>
         <div className="flex flex-col gap-2  relative">
-          <label className="font-medium">E-mail address*</label>
+          <label name="email" className="font-medium">
+            E-mail address*
+          </label>
           <input
             className=" border-solid border-thirdtext border-b-2 h-10 focus:outline-none focus:border-black"
             placeholder="johndoe@mail.com"
             onChange={handleChange}
             name="email"
-            type="text"
+            type="email"
             value={form.email}
           />
           {submited && form.email === "" && (
@@ -144,7 +150,7 @@ const GetInTouch = () => {
                 resetForm();
               }
             }}
-            type="button"
+            type="submit"
             className="bg-black text-white w-full py-3 rounded font-semibold text-base"
           >
             Send message
