@@ -12,7 +12,7 @@ const AuraBeauty = () => {
   ];
   return (
     <div className="relative" id="aurabeauty">
-      <div className="flex flex-col items-center absolute -top-44 left-1/4 gap-4">
+      <div className="flex flex-col items-center absolute -top-44 left-[20%] gap-4">
         <h4 className="text-3xl font-medium font-estrato italic">
           02 Aura Beauty
         </h4>
@@ -21,7 +21,7 @@ const AuraBeauty = () => {
           src={AuraBeautyImg}
           alt="auraBeauty: computer"
         />
-        <img src={AuraBeautyMobile} alt="auraBeauty: cellphone image" />
+        <img src={AuraBeautyMobile} alt="auraBeauty: cellphone" />
       </div>
       <div>
         <p className="pt-72 px-6 mb-5">

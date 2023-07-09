@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import leaves from "../../assets/img/Leaves-Flourish.png";
+import Swal from "sweetalert2";
 
 const GetInTouch = () => {
   const [form, setForm] = useState({
@@ -39,14 +40,27 @@ const GetInTouch = () => {
   const handleSubmit = () => {
     setSubmited( true )
     if (!form.name || !form.email || !form.subject || !form.message) {
+      Swal.fire({
+        position: "center",
+        icon: "error",
+        title: "Complete all the fields",
+        showConfirmButton: false,
+        timer: 1500,
+      });
       return
     }
-    alert("tu vieja en tanga")    
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Success",
+      showConfirmButton: false,
+      timer: 1500,
+    });
     setSubmited(false)
   };
 
   return (
-    <div id="getintouch">
+    <div>
       <div className="w-full flex justify-center my-10">
         <img src={leaves} alt="" />
       </div>
@@ -129,6 +143,7 @@ const GetInTouch = () => {
         </div>
         <div className="w-full flex flex-col items-center gap-4 my-10">
           <button
+            id="getintouch"
             onClick={() => {
               handleSubmit();
               if (form.name && form.email && form.subject && form.message) {

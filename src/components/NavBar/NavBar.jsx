@@ -1,22 +1,62 @@
-import React,{useState} from "react";
+import React, { useState, useEffect } from "react";
 import { BsBehance } from "react-icons/bs";
 import { BiLogoLinkedin } from "react-icons/bi";
 
 const NavBar = () => {
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(false);
+  const [activeLink, setActiveLink] = useState("");
 
   const handleClick = () => {
-    setNav(!nav)
-  }
-  const closeNav = () => {
-    setNav(false)
-  }
+    setNav(!nav);
+  };
+
+  const closeNav = (prop) => {
+    setNav(false);
+    setActiveLink(prop)
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const scrollPosition = window.scrollY;
+      const aboutSection = document.getElementById("about");
+      const portfolioSection = document.getElementById("portfolio");
+      const getInTouchSection = document.getElementById("getintouch");
+
+      if (
+        scrollPosition < aboutSection.offsetTop - 30 &&
+        activeLink !== "about"
+      ) {
+        setActiveLink("about");
+      } else if (
+        scrollPosition + windowHeight > aboutSection.offsetTop + 200 &&
+        scrollPosition + windowHeight < getInTouchSection.offsetTop + 200 &&
+        activeLink !== "portfolio"
+      ) {
+        setActiveLink("portfolio");
+      } else if (
+        scrollPosition + windowHeight > getInTouchSection.offsetTop + 200 &&
+        activeLink !== "getintouch"
+      ) {
+        setActiveLink("getintouch");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", closeNav);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", closeNav);
+    };
+  }, [activeLink]);
+
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6 fixed bg-background2 w-full">
+    <nav className="z-[2] flex items-center justify-between flex-wrap p-6 fixed bg-background2 w-full">
       <h3 className="font-semibold">euge sorgetti</h3>
       <div className="block lg:hidden">
         <button
-          onClick={() => handleClick()}
+          onClick={handleClick}
           className="flex items-center px-3 py-2 border rounded"
         >
           <svg
@@ -36,23 +76,29 @@ const NavBar = () => {
       >
         <div className="text-sm lg:flex-grow text-center">
           <a
-            onClick={closeNav}
+            onClick={() => closeNav("about")}
             href="#about"
-            className="block mt-4 lg:inline-block lg:mt-0 mr-4"
+            className={`block mt-4 lg:inline-block lg:mt-0 mr-4 ${
+              activeLink === "about" ? "font-semibold italic" : ""
+            }`}
           >
             about
           </a>
           <a
-            onClick={closeNav}
+            onClick={() => closeNav("portfolio")}
             href="#portfolio"
-            className="block mt-4 lg:inline-block lg:mt-0 mr-4"
+            className={`block mt-4 lg:inline-block lg:mt-0 mr-4 ${
+              activeLink === "portfolio" ? "font-semibold italic" : ""
+            }`}
           >
             portfolio
           </a>
           <a
-            onClick={closeNav}
+            onClick={() => closeNav("getintouch")}
             href="#getintouch"
-            className="block mt-4 lg:inline-block lg:mt-0"
+            className={`block mt-4 lg:inline-block lg:mt-0 ${
+              activeLink === "getintouch" ? "font-semibold italic" : ""
+            }`}
           >
             get in touch
           </a>
@@ -60,15 +106,17 @@ const NavBar = () => {
         <div className="flex justify-center">
           <a
             href="http://behance.net/eugesorgetti"
-            target="blank"
-            className="inline-block text-sm px-4 py-2 leading-none border rounded mt-4 lg:mt-0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-sm px-4 py-2 leading-none mt-4 lg:mt-0"
           >
             <BsBehance size={"1.5rem"} />
           </a>
           <a
             href="http://www.linkedin.com/in/eugenia-sorgetti"
-            target="blank"
-            className="inline-block text-sm px-4 py-2 leading-none border rounde mt-4 lg:mt-0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-sm px-4 py-2 leading-none  mt-4 lg:mt-0"
           >
             <BiLogoLinkedin size={"1.5rem"} />
           </a>
