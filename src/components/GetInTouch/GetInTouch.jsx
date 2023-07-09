@@ -40,21 +40,15 @@ const GetInTouch = () => {
   const handleSubmit = () => {
     setSubmited( true )
     if (!form.name || !form.email || !form.subject || !form.message) {
-      Swal.fire({
-        position: "center",
-        icon: "error",
-        title: "Complete all the fields",
-        showConfirmButton: false,
-        timer: 1500,
-      });
       return
     }
     Swal.fire({
       position: "center",
       icon: "success",
-      title: "Success",
+      title: "Message sent",
+      text: "Thank you for your message! I will read and respond shortly",
       showConfirmButton: false,
-      timer: 1500,
+      timer: 3500,
     });
     setSubmited(false)
   };
