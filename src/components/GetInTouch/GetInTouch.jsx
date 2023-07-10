@@ -58,7 +58,7 @@ const GetInTouch = () => {
       <div className="w-full flex justify-center my-10">
         <img className="w-6/12 sm:w-4/12" src={leaves} alt="leaves decoration" />
       </div>
-      <div className="flex flex-col gap-4 sm:gap-8 text-center px-5 lg:w-8/12 lg:mx-auto">
+      <div className="flex flex-col gap-4 sm:gap-8 text-center px-5 lg:w-8/12 lg:mx-auto xl:w-7/12">
         <h3 className="w-full text-3xl font-medium font-estrato italic">
           get in touch
         </h3>
@@ -71,7 +71,7 @@ const GetInTouch = () => {
       <form
         action="https://formspree.io/f/mnqloqlo"
         method="POST"
-        className="px-5 flex flex-col gap-10 mt-5 sm:mt-10 lg:w-6/12 lg:mx-auto"
+        className="px-5 flex flex-col gap-10 mt-5 sm:mt-10 lg:w-6/12 lg:mx-auto xl:w-5/12"
       >
         <div className="flex flex-col gap-0 relative">
           <label className="font-medium">Name*</label>
