@@ -4,7 +4,7 @@ import { BiLogoLinkedin } from "react-icons/bi";
 
 const Footer = () => {
   return (
-    <div className="bg-darkText text-white flex justify-between px-6 py-10">
+    <div className="bg-darkText text-white flex justify-between px-6 py-10 lg:justify-center lg:gap-40">
       <article>
         <h6 className="text-lg">MENU</h6>
         <ul className="border-l-2 border-white mt-5">

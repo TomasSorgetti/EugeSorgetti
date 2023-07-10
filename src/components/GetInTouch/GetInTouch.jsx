@@ -58,7 +58,7 @@ const GetInTouch = () => {
       <div className="w-full flex justify-center my-10">
         <img className="w-6/12 sm:w-4/12" src={leaves} alt="leaves decoration" />
       </div>
-      <div className="flex flex-col gap-4 sm:gap-8 text-center px-5">
+      <div className="flex flex-col gap-4 sm:gap-8 text-center px-5 lg:w-8/12 lg:mx-auto">
         <h3 className="w-full text-3xl font-medium font-estrato italic">
           get in touch
         </h3>
@@ -71,7 +71,7 @@ const GetInTouch = () => {
       <form
         action="https://formspree.io/f/mnqloqlo"
         method="POST"
-        className="px-5 flex flex-col gap-10 mt-5 sm:mt-10"
+        className="px-5 flex flex-col gap-10 mt-5 sm:mt-10 lg:w-6/12 lg:mx-auto"
       >
         <div className="flex flex-col gap-0 relative">
           <label className="font-medium">Name*</label>
@@ -141,7 +141,7 @@ const GetInTouch = () => {
             </span>
           )}
         </div>
-        <div className="w-full flex flex-col items-center gap-4 my-10 sm:my-20">
+        <div className="w-full flex flex-col items-center gap-4 my-10 sm:my-20 lg:mt-0">
           <button
             id="getintouch"
             onClick={() => {
@@ -151,7 +151,7 @@ const GetInTouch = () => {
               }
             }}
             type="submit"
-            className="bg-black text-white w-full py-3 rounded font-semibold text-base"
+            className="bg-black text-white w-full py-3 rounded font-semibold text-base lg:w-2/3"
           >
             Send message
           </button>

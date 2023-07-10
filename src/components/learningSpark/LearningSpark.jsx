@@ -2,13 +2,13 @@ import React from "react";
 import learningSpark from "../../assets/img/learningSpark.png";
 const LearningSpark = () => {
   return (
-    <section className="mb-40 mt-24" id="learning">
-      <article>
-        <h4 className="px-6 mt-14 mb-4 text-3xl font-medium font-estrato italic">
+    <section className="mb-40 mt-24 lg:mt-36" id="learning">
+      <article className="lg:w-10/12 lg:m-auto">
+        <h4 className="px-6 mt-14 mb-4 text-3xl font-medium font-estrato italic lg:px-0 lg:mb-10">
           03 learningspark
         </h4>
-        <div>
-          <div className="flex flex-col gap-4 p-6">
+        <div className="lg:flex">
+          <div className="flex flex-col gap-4 p-6 lg:w-9/12 lg:p-0">
             <p>Work in progress.</p>
             <p>
               In this case study, I led the redesign of Learning Spark's
@@ -30,8 +30,8 @@ const LearningSpark = () => {
             <img className="" src={learningSpark} alt="learning spark" />
           </div>
         </div>
-        <div className="flex flex-col items-center gap-6 my-5 w-full">
-          <button className="bg-black text-white w-11/12 py-3 rounded font-semibold text-base">
+        <div className="flex flex-col items-center gap-6 my-5 w-full lg:items-start ">
+          <button className="bg-black text-white w-11/12 py-3 rounded font-semibold text-base lg:w-48">
             Read case study
           </button>
           <p className="italic text-lightText">Only available in Spanish</p>

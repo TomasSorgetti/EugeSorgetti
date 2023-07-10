@@ -12,31 +12,41 @@ const AuraBeauty = () => {
   ];
   return (
     <div className="relative" id="aurabeauty">
-      <div className="flex flex-col items-center absolute -top-44 left-[20%] sm:left-[34%] gap-4">
-        <h4 className="text-3xl font-medium font-estrato italic">
+      <div className="flex flex-col items-center absolute -top-44 left-[20%] sm:left-[34%] gap-4 lg:-top-56 lg:left-[12%] xl:left-[20%]">
+        <h4 className="text-3xl font-medium font-estrato italic lg:hidden">
           02 Aura Beauty
         </h4>
         <img
-          className="hidden"
+          className="hidden lg:block"
           src={AuraBeautyImg}
           alt="auraBeauty: computer"
         />
-        <img src={AuraBeautyMobile} alt="auraBeauty: cellphone" />
+        <img
+          className="lg:hidden"
+          src={AuraBeautyMobile}
+          alt="auraBeauty: cellphone"
+        />
       </div>
-      <div>
-        <p className="pt-72 px-6 mb-6">
-          Custom-fit manicures, smart-sizing powered by AI. I participated in
-          the creation of the web app and Shopify, worked on components and the
-          UI Kit.
-        </p>
-        <ul className="px-10 text-lightText list-disc ">
-          {auraBeautyArr?.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
+      <div className="lg:flex lg:flex-col lg:items-center lg:w-8/12 lg:mx-auto">
+        <h4 className="text-3xl font-medium font-estrato italic hidden lg:flex lg:w-full lg:pt-80 lg:mb-5 lg:mt-10 lg:pl-6">
+          02 Aura Beauty
+        </h4>
+        <div className="lg:flex lg:justify-start lg:h-[120px]">
+          <p className="pt-72 px-6 mb-6 lg:pt-0 lg:w-6/12">
+            Custom-fit manicures, smart-sizing powered by AI. I participated in
+            the creation of the web app and Shopify, worked on components and
+            the UI Kit.
+          </p>
+          <div className="hidden lg:block lg:h-full lg:bg-gray-100 lg:w-1"></div>
+          <ul className="px-10 text-lightText list-disc lg:px-0 lg:w-40 lg:ml-20">
+            {auraBeautyArr?.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <div className="flex justify-center my-8 w-full">
-        <button className="bg-black text-white w-11/12 py-3 rounded font-semibold text-base">
+      <div className="flex justify-center my-8 w-full lg:mt-20">
+        <button className="bg-black text-white w-2/12 py-3 rounded font-semibold text-base">
           Check out aura
         </button>
       </div>
