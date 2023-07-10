@@ -26,21 +26,21 @@ const Porfolio = () => {
             <div className="w-full mx-auto sm:w-9/12 flex flex-col gap-2 sm:gap-3 lg:w-10/12 lg:gap-10">
               <a
                 href="#time2talk"
-                className="flex gap-2 pl-[5%] sm:pl-[15%] lg:pl-[13%] text-xl font-medium font-estrato italic lg:text-2xl"
+                className="flex gap-2 pl-[5%] sm:pl-[15%] lg:pl-[13%] xl:pl-[20%] text-xl font-medium font-estrato italic lg:text-2xl"
               >
                 <p>01</p>
                 <p>time2talk</p>
               </a>
               <a
                 href="#aurabeauty"
-                className="flex gap-2 pl-[15%] sm:pl-[25%] text-xl font-medium font-estrato italic lg:text-2xl"
+                className="flex gap-2 pl-[15%] sm:pl-[25%] xl:pl-[30%] text-xl font-medium font-estrato italic lg:text-2xl"
               >
                 <p>02</p>
                 <p>aura beauty</p>
               </a>
               <a
                 href="#learning"
-                className="flex gap-2 pl-[20%] sm:pl-[35%] text-xl font-medium font-estrato italic lg:text-2xl"
+                className="flex gap-2 pl-[20%] sm:pl-[35%] xl:pl-[40%] text-xl font-medium font-estrato italic lg:text-2xl"
               >
                 <p>03</p>
                 <p>learningspark</p>

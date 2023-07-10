@@ -13,7 +13,7 @@ const Time2Talk = () => {
   ];
   return (
     <section id="time2talk" className="lg:mb-32 lg:relative">
-      <article className="flex flex-col items-center lg:relative lg:w-6/12 lg:mr-20 lg:ml-auto">
+      <article className="flex flex-col items-center lg:relative lg:w-6/12 lg:mr-20 lg:ml-auto xl:mr-36 2xl:mr-52">
         <h4 className="w-full text-3xl font-medium font-estrato italic pl-5">
           01 time2talk
         </h4>
@@ -23,8 +23,8 @@ const Time2Talk = () => {
           alt="cellphone"
         />
         <div className="">
-          <div className="lg:flex">
-            <div className="flex flex-col gap-4 mb-5 px-5">
+          <div className="lg:flex lg:gap-10 lg:mt-5">
+            <div className="flex flex-col gap-4 mb-5 px-5 lg:pr-0 lg:w-11/12">
               <p>
                 Time2Talk is a simple, accessible and on-demand platform to
                 improve your Spanish conversation skills with friendly
@@ -36,7 +36,7 @@ const Time2Talk = () => {
                 cultural proficiency in Spanish.
               </p>
             </div>
-            <ul className="text-lightText px-10 mb-8 list-disc lg:w-60">
+            <ul className="text-lightText px-10 mb-8 list-disc lg:w-60 lg:p-0">
               {time2talkArr?.map((item) => (
                 <li key={item}>{item}</li>
               ))}

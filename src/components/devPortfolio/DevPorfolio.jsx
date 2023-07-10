@@ -29,24 +29,24 @@ const DevPorfolio = () => {
       </div>
       <div>
         <div className="hidden lg:block w-11/12 mx-auto lg:mt-10">
-          <img src={DevPorfolio1} alt="dev portfolio" />
+          <img className="w-full" src={DevPorfolio1} alt="dev portfolio" />
         </div>
         <div className="sm:my-20 lg:mt-10 lg:flex lg:w-11/12 lg:mx-auto lg:justify-between lg:gap-5">
-          <div className="w-full flex justify-center my-5 lg:m-0 lg:w-1/3">
+          <div className="w-full flex justify-center my-5 lg:m-0 lg:w-[40%]">
             <img className="w-full" src={DevPorfolio2} alt="dev portfolio" />
           </div>
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col justify-between lg:w-full">
             <div className="hidden lg:block ">
-              <img src={DevPorfolio3} alt="dev portfolio" />
+              <img className="w-full" src={DevPorfolio3} alt="dev portfolio" />
             </div>
-            <div className="hidden lg:flex lg:justify-center lg:gap-4 xl:gap-12">
+            <div className="hidden lg:flex lg:justify-start lg:gap-4 xl:gap-12 2xl:gap-16">
               <div>
                 <h5 className="text-4xl font-days font-semibold">DAYS ONE</h5>
                 <p className="font-bai font-normal text-xl">
                   Bai Jamjuree Regular
                 </p>
               </div>
-              <div className="flex gap-2 items-end ">
+              <div className="flex gap-2 items-end xl:gap-4">
                 <div className="w-[55px] h-[55px] bg-verde"></div>
                 <div className="w-[55px] h-[55px] bg-rosa"></div>
                 <div className="w-[55px] h-[55px] bg-fuxia"></div>
