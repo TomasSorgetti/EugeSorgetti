@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import leaves from "../../assets/img/Leaves-Flourish.png";
+import leaves from "../../assets/img/Leaves-Flourish.svg";
 import Swal from "sweetalert2";
 
 const GetInTouch = () => {

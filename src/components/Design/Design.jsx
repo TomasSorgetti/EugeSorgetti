@@ -1,16 +1,19 @@
 import React from "react";
 
 //import images
-import David from "../../assets/img/05/1.png";
-import UI from "../../assets/img/05/2.png";
-import Learning from "../../assets/img/05/3.png";
+import David from "../../assets/img/05/1.jpg";
+import UI from "../../assets/img/05/2.jpg";
+import Learning from "../../assets/img/05/3.jpg";
 
 const Design = () => {
   return (
     <div className="w-full flex flex-col gap-2 mt-14" id="design">
-      <div className="flex flex-col text-3xl font-medium font-estrato italic text-center">
-        <h3>05 design challenges</h3>
-        <h3>& social media</h3>
+      <div className="flex flex-col text-3xl font-medium font-estrato text-center">
+        <h3>
+          05
+          <span className="ml-2 italic">design challenges</span>
+        </h3>
+        <h3 className="italic">& social media</h3>
       </div>
       <div className="w-full overflow-hidden mt-6 sm:mb-10">
         <img className="object-cover w-full" src={David} alt="" />
@@ -47,9 +50,13 @@ const Design = () => {
         </div>
       </article>
       <div className="w-full flex flex-col items-center gap-4 my-10 sm:mt-20">
-        <button className="bg-black text-white w-11/12 py-3 rounded font-semibold text-base lg:w-[180px]">
+        <a
+          href="https://www.behance.net/eugesorgetti"
+          target="blank"
+          className="bg-black text-center text-white w-11/12 py-3 rounded font-semibold text-base lg:w-[180px]"
+        >
           See on Behance
-        </button>
+        </a>
       </div>
     </div>
   );

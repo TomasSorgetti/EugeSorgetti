@@ -13,8 +13,9 @@ const AuraBeauty = () => {
   return (
     <div className="relative" id="aurabeauty">
       <div className="flex flex-col items-center absolute -top-44 left-[20%] sm:left-[34%] gap-4 lg:-top-56 lg:left-[12%] xl:left-[20%] 2xl:left-[24%]">
-        <h4 className="text-3xl font-medium font-estrato italic lg:hidden">
-          02 Aura Beauty
+        <h4 className="text-3xl font-medium font-estrato lg:hidden">
+          02
+          <span className="ml-2 italic">Aura Beauty</span>
         </h4>
         <img
           className="hidden lg:block 2xl:w-[800px]"
@@ -46,9 +47,13 @@ const AuraBeauty = () => {
         </div>
       </div>
       <div className="flex justify-center my-8 w-full lg:mt-20">
-        <button className="bg-black text-white w-11/12 py-3 rounded font-semibold text-base lg:w-2/12">
+        <a
+          href="https://aura.beauty/"
+          target="blank"
+          className="bg-black text-center text-white w-11/12 py-3 rounded font-semibold text-base lg:w-2/12"
+        >
           Check out aura
-        </button>
+        </a>
       </div>
     </div>
   );

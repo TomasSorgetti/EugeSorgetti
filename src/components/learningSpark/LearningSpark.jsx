@@ -1,11 +1,13 @@
 import React from "react";
-import learningSpark from "../../assets/img/learningSpark.png";
+import deskSpark from "../../assets/img/03/sparkDesk.png";
+import mobileSpark from "../../assets/img/03/sparkMobile.png";
 const LearningSpark = () => {
   return (
-    <section className="mb-40 mt-24 lg:mt-36" id="learning">
+    <section className="mb-20 mt-24 lg:mt-36" id="learning">
       <article className="lg:w-10/12 lg:m-auto">
-        <h4 className="px-6 mt-14 mb-4 text-3xl font-medium font-estrato italic lg:px-0 lg:mb-10">
-          03 learningspark
+        <h4 className="px-6 mt-14 mb-4 text-3xl font-medium font-estrato lg:px-0 lg:mb-10">
+          03
+          <span className="ml-2 italic">learningspark</span>
         </h4>
         <div className="lg:flex">
           <div className="flex flex-col gap-4 p-6 lg:w-9/12 lg:p-0">
@@ -26,14 +28,27 @@ const LearningSpark = () => {
               exam preparation.
             </p>
           </div>
-          <div className="sm:h-96">
-            <img className="" src={learningSpark} alt="learning spark" />
+          <div className="mb-[-200px] sm:h-96">
+            <img
+              className="lg:hidden"
+              src={mobileSpark}
+              alt="learning spark mobile"
+            />
+            <img
+              className="hidden lg:block"
+              src={deskSpark}
+              alt="learning spark"
+            />
           </div>
         </div>
-        <div className="flex flex-col items-center gap-6 my-5 w-full lg:items-start ">
-          <button className="bg-black text-white w-11/12 py-3 rounded font-semibold text-base lg:w-48">
+        <div className="flex flex-col items-center gap-6 w-full lg:items-start lg:pt-6">
+          <a
+            target="blank"
+            href="https://www.behance.net/gallery/162859481/Math-Spark-Rediseno"
+            className="bg-black text-center text-white w-11/12 py-3 rounded font-semibold text-base lg:w-48"
+          >
             Read case study
-          </button>
+          </a>
           <p className="italic text-lightText">Only available in Spanish</p>
         </div>
       </article>

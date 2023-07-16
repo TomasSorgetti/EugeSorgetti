@@ -9,8 +9,12 @@ const DevPorfolio = () => {
     <article className="py-16 lg:w-10/12 lg:m-auto" id="devportfolio">
       <div>
         <div className="lg:w-full lg:flex lg:justify-end">
-          <h4 className="w-full text-center mb-5 text-3xl font-medium font-estrato italic lg:w-52 ">
-            04 dev portfolio
+          <h4 className="w-full text-center mb-5 text-3xl font-medium font-estrato lg:w-52 ">
+            04
+            <span className="ml-2 italic">
+            dev portfolio
+
+            </span>
           </h4>
         </div>
         <div className="px-6 lg:px-0 lg:w-9/12 lg:mx-auto lg:mt-10">
@@ -32,7 +36,7 @@ const DevPorfolio = () => {
           <img className="w-full" src={DevPorfolio1} alt="dev portfolio" />
         </div>
         <div className="sm:my-20 lg:mt-10 lg:flex lg:w-11/12 lg:mx-auto lg:justify-between lg:gap-5">
-          <div className="w-full flex justify-center my-5 lg:m-0 lg:w-[40%]">
+          <div className="w-full px-5 flex justify-center my-5 lg:m-0 lg:w-[40%]">
             <img className="w-full" src={DevPorfolio2} alt="dev portfolio" />
           </div>
           <div className="flex flex-col justify-between lg:w-full">
@@ -55,13 +59,23 @@ const DevPorfolio = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-col items-center gap-4 sm:mb-6">
-          <button className="bg-black text-white w-11/12 py-3 rounded font-semibold text-base lg:w-[150px]">
+        <div className="w-full mt-10 flex flex-col items-center gap-4 sm:mb-6">
+          <a
+            href="https://portfolio-six-mu-29.vercel.app/"
+            target="blank"
+            className="bg-black text-center text-white w-11/12 py-3 rounded font-semibold text-base lg:w-[150px]"
+          >
             Check it out
-          </button>
+          </a>
           <div className="flex gap-1">
             <p>or see the design on</p>
-            <p className="font-semibold underline">Behance</p>
+            <a
+              href="https://www.behance.net/gallery/173177875/Portfolio-Design"
+              target="blank"
+              className="font-semibold underline"
+            >
+              Behance
+            </a>
           </div>
         </div>
       </div>
