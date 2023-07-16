@@ -56,7 +56,11 @@ const GetInTouch = () => {
   return (
     <div>
       <div className="w-full flex justify-center my-10">
-        <img className="w-6/12 sm:w-4/12" src={leaves} alt="leaves decoration" />
+        <img
+          className="w-6/12 sm:w-4/12"
+          src={leaves}
+          alt="leaves decoration"
+        />
       </div>
       <div className="flex flex-col gap-4 sm:gap-8 text-center px-5 lg:w-8/12 lg:mx-auto xl:w-7/12">
         <h3 className="w-full text-3xl font-medium font-estrato italic">
@@ -151,7 +155,7 @@ const GetInTouch = () => {
               }
             }}
             type="submit"
-            className="bg-black text-white w-full py-3 rounded font-semibold text-base lg:w-2/3"
+            className="bg-black text-white w-full hover:bg-transparent hover:text-black border-[1px] hover:border-black focus:border-2 focus:font-bold pt-3 pb-2 rounded font-semibold text-base lg:w-2/3"
           >
             Send message
           </button>

@@ -47,7 +47,7 @@ const Time2Talk = () => {
             <a
               href="https://braintly.com/projects/time2talk/"
               target="blank"
-              className="bg-black text-center text-white w-11/12 py-3 rounded font-semibold text-base lg:w-36"
+              className="bg-black hover:bg-transparent hover:text-black border-[1px] hover:border-black focus:border-2 focus:font-bold pt-3 pb-2 text-center text-white w-11/12  rounded font-semibold text-base lg:w-40"
             >
               Read case study
             </a>

@@ -50,7 +50,7 @@ const AuraBeauty = () => {
         <a
           href="https://aura.beauty/"
           target="blank"
-          className="bg-black text-center text-white w-11/12 py-3 rounded font-semibold text-base lg:w-2/12"
+          className="bg-black text-center text-white w-11/12 hover:bg-transparent hover:text-black border-[1px] hover:border-black focus:border-2 focus:font-bold pt-3 pb-2 rounded font-semibold text-base lg:w-2/12"
         >
           Check out aura
         </a>

@@ -11,10 +11,7 @@ const DevPorfolio = () => {
         <div className="lg:w-full lg:flex lg:justify-end">
           <h4 className="w-full text-center mb-5 text-3xl font-medium font-estrato lg:w-52 ">
             04
-            <span className="ml-2 italic">
-            dev portfolio
-
-            </span>
+            <span className="ml-2 italic">dev portfolio</span>
           </h4>
         </div>
         <div className="px-6 lg:px-0 lg:w-9/12 lg:mx-auto lg:mt-10">
@@ -63,7 +60,7 @@ const DevPorfolio = () => {
           <a
             href="https://portfolio-six-mu-29.vercel.app/"
             target="blank"
-            className="bg-black text-center text-white w-11/12 py-3 rounded font-semibold text-base lg:w-[150px]"
+            className="bg-black text-center text-white w-11/12 hover:bg-transparent hover:text-black border-[1px] hover:border-black focus:border-2 focus:font-bold pt-3 pb-2 rounded font-semibold text-base lg:w-[150px]"
           >
             Check it out
           </a>
