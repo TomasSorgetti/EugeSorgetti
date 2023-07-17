@@ -4,7 +4,7 @@ import { BiLogoLinkedin } from "react-icons/bi";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
-  const [activeLink, setActiveLink] = useState("");
+  const [activeLink, setActiveLink] = useState("about");
 
   const handleClick = () => {
     setNav(!nav);
@@ -29,8 +29,8 @@ const NavBar = () => {
       ) {
         setActiveLink("about");
       } else if (
-        scrollPosition + windowHeight > aboutSection.offsetTop + 200 &&
-        scrollPosition + windowHeight < getInTouchSection.offsetTop + 200 &&
+        scrollPosition + windowHeight > aboutSection.offsetTop + windowHeight &&
+        scrollPosition + windowHeight < getInTouchSection.offsetTop &&
         activeLink !== "portfolio"
       ) {
         setActiveLink("portfolio");
@@ -52,8 +52,8 @@ const NavBar = () => {
   }, [activeLink]);
 
   return (
-    <nav className="z-[2] flex items-center justify-between flex-wrap p-6 fixed bg-background2 w-full">
-      <h3 className="font-semibold">euge sorgetti</h3>
+    <nav className="z-20 flex items-center justify-between flex-wrap p-6 fixed bg-background2 w-full">
+      <a href="#euge" className="font-semibold">euge sorgetti</a>
       <div className="block lg:hidden">
         <button
           onClick={handleClick}

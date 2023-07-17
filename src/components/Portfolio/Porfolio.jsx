@@ -15,7 +15,7 @@ import bannerMobile from "../../assets/img/banner/bannerMobile.png";
 import bannerDesk from "../../assets/img/banner/bannerDesk.png";
 const Porfolio = () => {
   return (
-    <div id="portfolio" className="pt-16">
+    <div id="euge" className="pt-16">
       <section>
         <article className="relative h-[400px] sm:h-[420px] bg-banner flex w-full justify-center lg:h-[550px] ">
           <div className="flex flex-col text-white text-center mt-20 lg:z-10 2xl:mt-24">
@@ -35,10 +35,16 @@ const Porfolio = () => {
             alt="banner desktop"
           />
         </article>
-        <article className="bg-background1 grid place-items-center pt-32 lg:pt-40 xl:pt-[350px] 2xl:pt-[500px] 3xl:pt-[700px]">
+        <article
+          id="about"
+          className="bg-background1 grid place-items-center pt-32 pb-10 lg:pt-40 xl:pt-[350px] 2xl:pt-[500px] 3xl:pt-[700px]"
+        >
           <About />
         </article>
-        <section className="bg-background1 flex flex-col items-center">
+        <section
+          id="portfolio"
+          className="bg-background1 flex flex-col items-center"
+        >
           <h3 className="text-3xl font-medium font-estrato italic mb-10 lg:text-4xl lg:mb-16">
             Portfolio
           </h3>

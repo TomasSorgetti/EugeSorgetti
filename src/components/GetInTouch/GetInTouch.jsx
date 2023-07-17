@@ -11,7 +11,6 @@ const GetInTouch = () => {
   });
   const [submited, setSubmited] = useState(false);
 
-
   const handleChange = (event) => {
     const property = event.target.name;
     const value = event.target.value;
@@ -36,11 +35,11 @@ const GetInTouch = () => {
       subject: "",
       message: "",
     });
-  }
+  };
   const handleSubmit = () => {
-    setSubmited( true )
+    setSubmited(true);
     if (!form.name || !form.email || !form.subject || !form.message) {
-      return
+      return;
     }
     Swal.fire({
       position: "center",
@@ -50,11 +49,11 @@ const GetInTouch = () => {
       showConfirmButton: false,
       timer: 3500,
     });
-    setSubmited(false)
+    setSubmited(false);
   };
 
   return (
-    <div>
+    <div id="getintouch">
       <div className="w-full flex justify-center my-10">
         <img
           className="w-6/12 sm:w-4/12"
@@ -147,7 +146,6 @@ const GetInTouch = () => {
         </div>
         <div className="w-full flex flex-col items-center gap-4 my-10 sm:my-20 lg:mt-0">
           <button
-            id="getintouch"
             onClick={() => {
               handleSubmit();
               if (form.name && form.email && form.subject && form.message) {
