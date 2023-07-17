@@ -18,11 +18,11 @@ const Porfolio = () => {
     <div id="euge" className="pt-16">
       <section>
         <article className="relative h-[400px] sm:h-[420px] bg-banner flex w-full justify-center lg:h-[550px] ">
-          <div className="flex flex-col text-white text-center mt-20 lg:z-10 2xl:mt-24">
-            <h1 className="text-4xl lg:text-6xl text-estrato 2xl:text-8xl">
+          <div className="flex flex-col gap-2 text-white text-center mt-16 lg:z-10 2xl:mt-24">
+            <h1 className="text-5xl lg:text-6xl font-estrato 2xl:text-8xl">
               Hi! I’m Euge
             </h1>
-            <p className="text-base lg:text-xl font-light text-epilogue 2xl:text-4xl">
+            <p className="text-base lg:text-xl font-light font-epilogue 2xl:text-4xl">
               UX/UI & Web Designer
             </p>
           </div>

@@ -53,7 +53,9 @@ const NavBar = () => {
 
   return (
     <nav className="z-20 flex items-center justify-between flex-wrap p-6 fixed bg-background2 w-full">
-      <a href="#euge" className="font-semibold">euge sorgetti</a>
+      <a href="#euge" className="font-semibold font-estrato text-[24px]">
+        Euge Sorgetti
+      </a>
       <div className="block lg:hidden">
         <button
           onClick={handleClick}
@@ -78,7 +80,7 @@ const NavBar = () => {
           <a
             onClick={() => closeNav("about")}
             href="#about"
-            className={`block mt-4 lg:inline-block lg:mt-0 mr-4 ${
+            className={`block font-estrato text-[18px] mt-4 lg:inline-block lg:mt-0 mr-4 ${
               activeLink === "about" ? "font-semibold italic" : ""
             }`}
           >
@@ -87,7 +89,7 @@ const NavBar = () => {
           <a
             onClick={() => closeNav("portfolio")}
             href="#portfolio"
-            className={`block mt-4 lg:inline-block lg:mt-0 mr-4 ${
+            className={`block font-estrato text-[18px] mt-4 lg:inline-block lg:mt-0 mr-4 ${
               activeLink === "portfolio" ? "font-semibold italic" : ""
             }`}
           >
@@ -96,7 +98,7 @@ const NavBar = () => {
           <a
             onClick={() => closeNav("getintouch")}
             href="#getintouch"
-            className={`block mt-4 lg:inline-block lg:mt-0 ${
+            className={`block font-estrato text-[18px] mt-4 lg:inline-block lg:mt-0 ${
               activeLink === "getintouch" ? "font-semibold italic" : ""
             }`}
           >
