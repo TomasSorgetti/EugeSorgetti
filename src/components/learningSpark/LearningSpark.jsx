@@ -45,7 +45,7 @@ const LearningSpark = () => {
           <a
             target="blank"
             href="https://www.behance.net/gallery/162859481/Math-Spark-Rediseno"
-            className="bg-black text-center text-white w-11/12 hover:bg-transparent hover:text-black border-[1px] hover:border-black focus:border-2 focus:font-bold pt-3 pb-2 rounded font-semibold text-base lg:w-48"
+            className="bg-black text-center text-white w-11/12 hover:bg-transparent hover:text-black border-[1px] hover:border-black active:border-2 active:font-bold pt-3 pb-2 rounded font-semibold text-base lg:w-48"
           >
             Read case study
           </a>

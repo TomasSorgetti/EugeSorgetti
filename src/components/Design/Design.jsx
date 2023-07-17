@@ -53,7 +53,7 @@ const Design = () => {
         <a
           href="https://www.behance.net/eugesorgetti"
           target="blank"
-          className="bg-black text-center text-white w-11/12 hover:bg-transparent hover:text-black border-[1px] hover:border-black focus:border-2 focus:font-bold pt-3 pb-2 rounded font-semibold text-base lg:w-[180px]"
+          className="bg-black text-center text-white w-11/12 hover:bg-transparent hover:text-black border-[1px] hover:border-black active:border-2 active:font-bold pt-3 pb-2 rounded font-semibold text-base lg:w-[180px]"
         >
           See on Behance
         </a>

@@ -163,7 +163,7 @@ const GetInTouch = () => {
         <div className="w-full flex flex-col items-center gap-4 my-10 sm:my-20 lg:mt-0">
           <button
             type="submit"
-            className="bg-black text-white w-full hover:bg-transparent hover:text-black border-[1px] hover:border-black focus:border-2 focus:font-bold pt-3 pb-2 rounded font-semibold text-base lg:w-2/3"
+            className="bg-black text-white w-full hover:bg-transparent hover:text-black border-[1px] hover:border-black active:border-2 active:font-bold pt-3 pb-2 rounded font-semibold text-base lg:w-2/3"
           >
             Send message
           </button>

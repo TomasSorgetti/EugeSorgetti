@@ -60,7 +60,7 @@ const DevPorfolio = () => {
           <a
             href="https://portfolio-six-mu-29.vercel.app/"
             target="blank"
-            className="bg-black text-center text-white w-11/12 hover:bg-transparent hover:text-black border-[1px] hover:border-black focus:border-2 focus:font-bold pt-3 pb-2 rounded font-semibold text-base lg:w-[150px]"
+            className="bg-black text-center text-white w-11/12 hover:bg-transparent hover:text-black border-[1px] hover:border-black active:border-2 active:font-bold pt-3 pb-2 rounded font-semibold text-base lg:w-[150px]"
           >
             Check it out
           </a>
