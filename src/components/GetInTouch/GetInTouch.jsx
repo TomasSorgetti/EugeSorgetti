@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import leaves from "../../assets/img/Leaves-Flourish.svg";
 import Swal from "sweetalert2";
-
+import emailjs from "emailjs-com"
 const GetInTouch = () => {
   const [form, setForm] = useState({
     name: "",
@@ -36,20 +36,35 @@ const GetInTouch = () => {
       message: "",
     });
   };
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault()
     setSubmited(true);
     if (!form.name || !form.email || !form.subject || !form.message) {
       return;
     }
-    Swal.fire({
-      position: "center",
-      icon: "success",
-      title: "Message sent",
-      text: "Thank you for your message! I will read and respond shortly",
-      showConfirmButton: false,
-      timer: 3500,
-    });
-    setSubmited(false);
+    emailjs.sendForm(
+      "service_xus76gn",
+      "template_7ydkq6h",
+      e.target,
+      "VUyYB6hY86IyTP9MW"
+    ).then((res) => {
+      if (res) {
+        console.log(res);
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "Message sent",
+          text: "Thank you for your message! I will read and respond shortly",
+          showConfirmButton: false,
+          timer: 3500,
+        });
+        resetForm()
+        setSubmited(false)        
+      }
+    }).catch((err) => {
+      console.log(err);
+    })
+    
   };
 
   return (
@@ -72,8 +87,9 @@ const GetInTouch = () => {
         </p>
       </div>
       <form
-        action="https://formspree.io/f/mnqloqlo"
-        method="POST"
+        // action="https://formspree.io/f/mnqloqlo"
+        // method="POST"
+        onSubmit={handleSubmit}
         className="px-5 flex flex-col gap-10 mt-5 sm:mt-10 lg:w-6/12 lg:mx-auto xl:w-5/12"
       >
         <div className="flex flex-col gap-0 relative">
@@ -146,12 +162,6 @@ const GetInTouch = () => {
         </div>
         <div className="w-full flex flex-col items-center gap-4 my-10 sm:my-20 lg:mt-0">
           <button
-            onClick={() => {
-              handleSubmit();
-              if (form.name && form.email && form.subject && form.message) {
-                resetForm();
-              }
-            }}
             type="submit"
             className="bg-black text-white w-full hover:bg-transparent hover:text-black border-[1px] hover:border-black focus:border-2 focus:font-bold pt-3 pb-2 rounded font-semibold text-base lg:w-2/3"
           >
