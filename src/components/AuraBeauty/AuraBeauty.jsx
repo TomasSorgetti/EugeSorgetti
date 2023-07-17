@@ -29,8 +29,9 @@ const AuraBeauty = () => {
         />
       </div>
       <div className="lg:flex lg:flex-col lg:items-center lg:w-7/12 lg:mx-auto">
-        <h4 className="text-3xl font-medium font-estrato italic hidden lg:flex lg:w-full lg:pt-80 lg:mb-5 lg:mt-10 lg:pl-6">
-          02 Aura Beauty
+        <h4 className="text-3xl font-medium font-estrato hidden lg:flex lg:w-full lg:pt-80 lg:mb-5 lg:mt-10 lg:pl-6">
+          02
+          <span className="italic ml-2">Aura Beauty</span>
         </h4>
         <div className="lg:flex lg:justify-start lg:h-[120px]">
           <p className="pt-72 px-6 mb-6 lg:pt-0 lg:w-6/12 xl:pt-5">

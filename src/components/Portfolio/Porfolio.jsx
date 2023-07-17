@@ -17,12 +17,16 @@ const Porfolio = () => {
   return (
     <div id="portfolio" className="pt-16">
       <section>
-        <article className="relative h-[450px] bg-banner flex w-full justify-center lg:h-[550px] ">
-          <div className="lg:hidden w-[75%] h-[75%] absolute bottom-[-30px] sm:bottom-[15px] md:bottom-[-15px]">
-            <div className="flex flex-col text-white text-center mb-3">
-              <h1 className="text-4xl">Hi! I’m Euge</h1>
-              <p className="text-base">UX/UI & Web Designer</p>
-            </div>
+        <article className="relative h-[400px] sm:h-[420px] bg-banner flex w-full justify-center lg:h-[550px] ">
+          <div className="flex flex-col text-white text-center mt-20 lg:z-10 2xl:mt-24">
+            <h1 className="text-4xl lg:text-6xl text-estrato 2xl:text-8xl">
+              Hi! I’m Euge
+            </h1>
+            <p className="text-base lg:text-xl font-light text-epilogue 2xl:text-4xl">
+              UX/UI & Web Designer
+            </p>
+          </div>
+          <div className="lg:hidden w-[75%] h-[75%] absolute bottom-[-50px] sm:bottom-[-50px]">
             <img className="mx-auto" src={bannerMobile} alt="banner mobile" />
           </div>
           <img
@@ -31,7 +35,7 @@ const Porfolio = () => {
             alt="banner desktop"
           />
         </article>
-        <article className="bg-background1 grid place-items-center pt-32 lg:pt-40 xl:pt-[350px] 2xl:pt-[500px]">
+        <article className="bg-background1 grid place-items-center pt-32 lg:pt-40 xl:pt-[350px] 2xl:pt-[500px] 3xl:pt-[700px]">
           <About />
         </article>
         <section className="bg-background1 flex flex-col items-center">
@@ -45,35 +49,35 @@ const Porfolio = () => {
                 className="flex gap-1 pl-0 sm:pl-[15%] lg:pl-[5%] xl:pl-[20%] text-xl font-medium font-estrato lg:text-2xl"
               >
                 <p>01</p>
-                <p className="italic">time2talk</p>
+                <p className="italic nav">time2talk</p>
               </a>
               <a
                 href="#aurabeauty"
                 className="flex gap-1 pl-[40px] sm:pl-[25%] lg:pl-[15%] xl:pl-[30%] text-xl font-medium font-estrato lg:text-2xl"
               >
                 <p>02</p>
-                <p className="italic">aura beauty</p>
+                <p className="italic nav">aura beauty</p>
               </a>
               <a
                 href="#learning"
                 className="flex gap-1 pl-[75px] sm:pl-[35%] lg:pl-[28%]  xl:pl-[40%] text-xl font-medium font-estrato lg:text-2xl"
               >
                 <p>03</p>
-                <p className="italic">learningspark</p>
+                <p className="italic nav">learningspark</p>
               </a>
               <a
                 href="#devportfolio"
                 className="flex gap-1 pl-[110px] sm:pl-[45%] lg:pl-[45%] xl:pl-[50%] text-xl font-medium font-estrato  lg:text-2xl"
               >
                 <p>04</p>
-                <p className="italic">dev porfolio</p>
+                <p className="italic nav">dev porfolio</p>
               </a>
               <a
                 href="#design"
                 className="flex gap-1 pl-[140px] sm:pl-[55%] lg:pl-[60%] text-xl font-medium font-estrato  lg:text-2xl"
               >
                 <p>05</p>
-                <div className="lg:flex lg:gap-2 italic">
+                <div className="lg:flex lg:gap-2 italic nav">
                   <p>design challenges</p>
                   <p>& social media</p>
                 </div>

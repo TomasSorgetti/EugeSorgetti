@@ -5,3 +5,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.nav{
+    position: relative;
+}
+.nav::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: rgb(62, 62, 62);
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    transition: 300ms;
+    
+}
+.nav.nav:hover::before{
+    width: 100%;
+}
